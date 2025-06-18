@@ -1,5 +1,5 @@
 # Proyecto-Programacion
-### Integrantes: 
+### Integrantes de codigo concreto: 
 Susan Loraine Galindo Gomez
 
 Martin David Monroy Bautista
