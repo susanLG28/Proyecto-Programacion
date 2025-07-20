@@ -1,7 +1,6 @@
-# Proyecto-Programacion
+# Proyecto Programacion Ahorcado
 ### Integrantes de codigo concreto: 
 Susan Loraine Galindo Gomez
-
 Martin David Monroy Bautista
 
 ## Introducción del proyecto
@@ -10,12 +9,11 @@ El Ahorcado es un juego tradicional de palabras que consiste en adivinar una pal
 
 En este proyecto desarrollaremos este entretenido juego utilizando Python, aplicando conceptos ya vistos en clase y otros que iremos aprendiendo a lo largo del curso. Este ejercicio nos permitirá practicar la lógica de programación, mejorar nuestras habilidades en Python y fortalecer nuestro conocimiento general del lenguaje.
 
-## Elementos del codigo
+## Elementos de nuestro codigo
 
 * ### Lectura del diccionario de palabras:
-  vamos a usar un archivo externo (.txt). Se puede utilizar un archivo de texto que contenga una palabra por línea. El programa lee este archivo al inicio de la ejecución y carga las palabras en una lista. Esta opción permite manejar un mayor numero de palabras de manera más organizada y fácil de modificar sin alterar el código.
+Usamos varios archivos .txt para las categorias de las palabras tenemos 13 categorias:  
 
-  Es nuestra mejor opccion ya que el juego debe tener como minimo 1000 palabras.
 
 * ### Selección aleatoria de la palabra:
 
