@@ -57,6 +57,33 @@ El juego incluye 13 categorías, cada una con su propio archivo de palabras:
 4. Se inicia el juego: el usuario adivina letra por letra.
 5. El juego termina al adivinar la palabra o perder todas las vidas.
 
+
+```mermaid
+
+flowchart TD
+    A[Inicio] --> B[Mostrar categorías disponibles]
+    B --> C[Elegir una categoría]
+    C --> D[Cargar palabras del archivo .txt]
+    D --> E[Clasificar por dificultad]
+    E --> F[Elegir dificultad: fácil, media o difícil]
+    F --> G[Obtener vidas según dificultad]
+    G --> H[Seleccionar palabra aleatoria]
+    H --> I[Inicializar letras adivinadas e incorrectas]
+
+    I --> J{¿Vidas = 0 o palabra adivinada?}
+    J -- Sí --> Z[Fin del juego]
+    J -- No --> K[Mostrar palabra con guiones y letras]
+    K --> L[Mostrar dibujo del ahorcado]
+    L --> M[Mostrar letras incorrectas]
+    M --> N[Ingresar una letra]
+    N --> O{¿Letra válida y no repetida?}
+    O -- No --> K
+    O -- Sí --> P{¿Letra en la palabra?}
+    P -- Sí --> Q[Agregar a letras adivinadas]
+    P -- No --> R[Agregar a letras incorrectas y restar una vida]
+    Q --> J
+    R --> J
+```
 ---
 
 ## Lógica implementada
